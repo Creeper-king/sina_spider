@@ -1,7 +1,8 @@
 import urllib.request
 
-
+# 下载器
 class PageDownloader(object):
+
     def download(self, url):
         if url is None:
             return

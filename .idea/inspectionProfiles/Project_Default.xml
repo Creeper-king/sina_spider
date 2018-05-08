@@ -12,6 +12,7 @@
       <option name="ignoredIdentifiers">
         <list>
           <option value="spider_main.__init__" />
+          <option value="spider_main.__class__" />
         </list>
       </option>
     </inspection_tool>

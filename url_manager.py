@@ -1,14 +1,21 @@
+# URL管理器
 class UrlManager(object):
+
+    url_count = 0
+
     def __init__(self):
         self.new_urls = set()
         self.old_urls = set()
 
 
     def add_new_url(self, url):
+        if self.url_count >= 12:
+            return
         if url is None:
             return
         if url not in self.new_urls and url not in self.old_urls:
             self.new_urls.add(url)
+            self.url_count += 1
 
 
     def add_new_urls(self, urls):
